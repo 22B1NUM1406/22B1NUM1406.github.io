@@ -1,39 +1,138 @@
 <!DOCTYPE html>
-<html>
+<html lang="mn">
 <head>
-  <title>Миний танилцуулга - Нүүр хуудас</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Миний CV</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f4f6f9;
+        margin: 0;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    .cv-container {
+        width: 800px;
+        background: #fff;
+        display: table;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .left, .right {
+        display: table-cell;
+        vertical-align: top;
+        padding: 30px;
+    }
+    .left {
+        background: #3498db;
+        color: white;
+        width: 30%;
+        text-align: center;
+    }
+    .right {
+        width: 70%;
+        background: #fff;
+        color: #333;
+    }
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        margin-bottom: 15px;
+        border: 3px solid #fff;
+        object-fit: cover;
+    }
+    h1 {
+        margin: 10px 0 5px 0;
+        font-size: 24px;
+    }
+    .contact p {
+        margin: 5px 0;
+        font-size: 14px;
+    }
+    h2 {
+        font-size: 18px;
+        color: #3498db;
+        border-bottom: 2px solid #3498db;
+        padding-bottom: 3px;
+        margin-top: 25px;
+    }
+    ul {
+        margin: 5px 0 10px 20px;
+    }
+    .skill {
+        display: inline-block;
+        background: white;
+        color: #3498db;
+        padding: 3px 8px;
+        border-radius: 5px;
+        font-size: 0.85em;
+        margin: 3px 3px 3px 0;
+    }
+    .social-icons a {
+        display: inline-block;
+        margin: 5px 5px 0 0;
+        color: white;
+        font-size: 18px;
+        text-decoration: none;
+    }
+</style>
 </head>
 <body>
 
-<table border="1" width="80%" align="center">
-  <!-- Толгой/Header -->
-  <tr>
-    <td colspan="2" align="center">
-      <h1>Миний танилцуулга</h1>
-      <!-- Цэс/Menu -->
-      <a href="index.html">Нүүр хуудас</a> |
-      <a href="about.html">Миний тухай</a> |
-      <a href="family.html">Гэр бүл</a> |
-      <a href="friends.html">Найзууд</a> |
-      <a href="contact.html">Холбоо барих</a>
-    </td>
-  </tr>
+<div class="cv-container">
+    <div class="left">
+        <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+        <h1>Таны Нэр</h1>
+        <div class="contact">
+            <p>📧 example@email.com</p>
+            <p>📱 +976-XXXXXXXX</p>
+            <p>📍 Улаанбаатар, Монгол</p>
+        </div>
+        <h2>Ур чадварууд</h2>
+        <span class="skill">HTML</span>
+        <span class="skill">CSS</span>
+        <span class="skill">Python</span>
+        <span class="skill">MS Office</span>
+        <span class="skill">Багийн ажиллагаа</span>
 
-  <!-- Гол агуулга/Main Content -->
-  <tr>
-    <td colspan="2">
-      <h2>Тавтай морилно уу!</h2>
-      <p>Энэ бол миний өөрийн тухай танилцуулга вебсайт юм.</p>
-    </td>
-  </tr>
+        <h2>Нийгмийн сүлжээ</h2>
+        <div class="social-icons">
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            <a href="https://github.com" target="_blank">GitHub</a>
+        </div>
+    </div>
 
-  <!-- Хөл/Footer -->
-  <tr>
-    <td colspan="2" align="center">
-      <p>© 2025 Миний Танилцуулга</p>
-    </td>
-  </tr>
-</table>
+    <div class="right">
+        <h2>Танилцуулга</h2>
+        <p>Би оюутан бөгөөд программчлал, мэдээллийн технологид сонирхолтой. Вэб хөгжүүлэлт болон дата анализын чиглэлээр суралцаж байна. Багийн төсөлд идэвхтэй оролцож, ур чадвараа хөгжүүлдэг.</p>
+
+        <h2>Сургалтын мэдээлэл</h2>
+        <p><strong>Бакалавр, Компьютерийн ухаан</strong> – Монгол Улсын Их Сургууль (2022 – Одоо)</p>
+
+        <h2>Туршлага / Төсөл</h2>
+        <h3>Вэб сайт бүтээх төсөл (2023)</h3>
+        <ul>
+            <li>HTML, CSS ашиглан сургуулийн клубын вэб сайт бүтээсэн.</li>
+            <li>GitHub ашиглан кодын хувилбар хяналт хийсэн.</li>
+        </ul>
+
+        <h3>Python дата анализ төсөл (2024)</h3>
+        <ul>
+            <li>Pandas, Matplotlib ашиглаж судалгааны дата боловсруулалт хийсэн.</li>
+            <li>Дүгнэлтүүдийг тайлан болгон багтааж танилцуулсан.</li>
+        </ul>
+
+        <h2>Шагнал / Сертификат</h2>
+        <ul>
+            <li>Python үндсэн сургалтын сертификат – 2023</li>
+            <li>Оюутны олимпиадад III байр – 2022</li>
+        </ul>
+    </div>
+</div>
 
 </body>
 </html>
