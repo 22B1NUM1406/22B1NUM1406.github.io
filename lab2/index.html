@@ -1,138 +1,94 @@
 <!DOCTYPE html>
 <html lang="mn">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Миний CV</title>
-<style>
+  <meta charset="UTF-8">
+  <title>Миний CV</title>
+  <style>
     body {
-        font-family: Arial, sans-serif;
-        background: #f4f6f9;
-        margin: 0;
-        padding: 20px;
-        display: flex;
-        justify-content: center;
-    }
-    .cv-container {
-        width: 800px;
-        background: #fff;
-        display: table;
-        border-radius: 10px;
-        overflow: hidden;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-    .left, .right {
-        display: table-cell;
-        vertical-align: top;
-        padding: 30px;
-    }
-    .left {
-        background: #3498db;
-        color: white;
-        width: 30%;
-        text-align: center;
-    }
-    .right {
-        width: 70%;
-        background: #fff;
-        color: #333;
-    }
-    .profile-pic {
-        width: 120px;
-        height: 120px;
-        border-radius: 50%;
-        margin-bottom: 15px;
-        border: 3px solid #fff;
-        object-fit: cover;
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      margin: 20px;
     }
     h1 {
-        margin: 10px 0 5px 0;
-        font-size: 24px;
+      text-align: center;
+      color: #333;
     }
-    .contact p {
-        margin: 5px 0;
-        font-size: 14px;
+    .profile-pic {
+      display: block;
+      margin: 0 auto;
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
     }
-    h2 {
-        font-size: 18px;
-        color: #3498db;
-        border-bottom: 2px solid #3498db;
-        padding-bottom: 3px;
-        margin-top: 25px;
+    table {
+      width: 90%;
+      margin: 20px auto;
+      border-collapse: collapse;
+      background: #fff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
-    ul {
-        margin: 5px 0 10px 20px;
+    th, td {
+      padding: 12px 15px;
+      border: 1px solid #ddd;
+      text-align: left;
     }
-    .skill {
-        display: inline-block;
-        background: white;
-        color: #3498db;
-        padding: 3px 8px;
-        border-radius: 5px;
-        font-size: 0.85em;
-        margin: 3px 3px 3px 0;
+    th {
+      background: #4CAF50;
+      color: white;
     }
-    .social-icons a {
-        display: inline-block;
-        margin: 5px 5px 0 0;
-        color: white;
-        font-size: 18px;
-        text-decoration: none;
+    tr:nth-child(even) {
+      background: #f2f2f2;
     }
-</style>
+    .section-title {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
+  <h1>Миний CV</h1>
 
-<div class="cv-container">
-    <div class="left">
-        <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
-        <h1>Таны Нэр</h1>
-        <div class="contact">
-            <p>📧 example@email.com</p>
-            <p>📱 +976-XXXXXXXX</p>
-            <p>📍 Улаанбаатар, Монгол</p>
-        </div>
-        <h2>Ур чадварууд</h2>
-        <span class="skill">HTML</span>
-        <span class="skill">CSS</span>
-        <span class="skill">Python</span>
-        <span class="skill">MS Office</span>
-        <span class="skill">Багийн ажиллагаа</span>
+  <!-- Зураг -->
+  <img src="mypicture.jpg" alt="Миний зураг" class="profile-pic">
 
-        <h2>Нийгмийн сүлжээ</h2>
-        <div class="social-icons">
-            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-            <a href="https://github.com" target="_blank">GitHub</a>
-        </div>
-    </div>
+  <!-- Боловсрол -->
+  <table>
+    <tr><th colspan="2" class="section-title">Боловсрол</th></tr>
+    <tr><td>2010 – 2020</td><td>ЕБ-ын Сэтгэмж цогцолбор сургууль</td></tr>
+    <tr><td>2020 – 2022</td><td>ЕБ-ын Эрхэт Эрдэм сургууль (Төгссөн)</td></tr>
+    <tr><td>2022 – одоо</td><td>Монгол Улсын Их Сургууль – Программ хангамж</td></tr>
+  </table>
 
-    <div class="right">
-        <h2>Танилцуулга</h2>
-        <p>Би оюутан бөгөөд программчлал, мэдээллийн технологид сонирхолтой. Вэб хөгжүүлэлт болон дата анализын чиглэлээр суралцаж байна. Багийн төсөлд идэвхтэй оролцож, ур чадвараа хөгжүүлдэг.</p>
+  <!-- Цэргийн алба -->
+  <table>
+    <tr><th colspan="2" class="section-title">Цэргийн алба</th></tr>
+    <tr><td>2022 – 2023</td><td>Зэвсэгт хүчний 016-р анги</td></tr>
+  </table>
 
-        <h2>Сургалтын мэдээлэл</h2>
-        <p><strong>Бакалавр, Компьютерийн ухаан</strong> – Монгол Улсын Их Сургууль (2022 – Одоо)</p>
+  <!-- Ажлын туршлага -->
+  <table>
+    <tr><th colspan="2" class="section-title">Ажлын туршлага</th></tr>
+    <tr><td>2024.06 – 2024.09</td><td>MCS групп – Агуулахын туслах ажилтан</td></tr>
+    <tr><td>2025.06 – 2025.09</td><td>MCS групп – Агуулахын туслах ажилтан</td></tr>
+  </table>
 
-        <h2>Туршлага / Төсөл</h2>
-        <h3>Вэб сайт бүтээх төсөл (2023)</h3>
-        <ul>
-            <li>HTML, CSS ашиглан сургуулийн клубын вэб сайт бүтээсэн.</li>
-            <li>GitHub ашиглан кодын хувилбар хяналт хийсэн.</li>
-        </ul>
+  <!-- Ур чадвар -->
+  <table>
+    <tr><th colspan="2" class="section-title">Ур чадвар</th></tr>
+    <tr><td>Програмчлалын хэл</td><td>C, C++, Java, JavaScript</td></tr>
+    <tr><td>Өгөгдлийн сан</td><td>PostgreSQL, MySQL, MongoDB</td></tr>
+    <tr><td>Гадаад хэл</td><td>Англи хэл – Ахисан дунд түвшин</td></tr>
+  </table>
 
-        <h3>Python дата анализ төсөл (2024)</h3>
-        <ul>
-            <li>Pandas, Matplotlib ашиглаж судалгааны дата боловсруулалт хийсэн.</li>
-            <li>Дүгнэлтүүдийг тайлан болгон багтааж танилцуулсан.</li>
-        </ul>
-
-        <h2>Шагнал / Сертификат</h2>
-        <ul>
-            <li>Python үндсэн сургалтын сертификат – 2023</li>
-            <li>Оюутны олимпиадад III байр – 2022</li>
-        </ul>
-    </div>
-</div>
-
+  <!-- Шагнал -->
+  <table>
+    <tr><th colspan="2" class="section-title">Шагнал, амжилт</th></tr>
+    <tr><td>Түүхийн олимпиад</td><td>Баянгол дүүрэг – Алтан медаль</td></tr>
+    <tr><td>Түүхийн олимпиад</td><td>Нийслэл – Тусгай байр</td></tr>
+  </table>
 </body>
 </html>
