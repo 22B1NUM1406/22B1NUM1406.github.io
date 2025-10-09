@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="mn">
+<head>
+<meta charset="utf-8">
+<title>thefacebook1 - Балдан</title>
+<style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #d8dfea;
+    margin: 0;
+    padding: 20px 0;
+  }
+
+  /* Гол төв хэсгийн хүснэгт */
+  .container {
+    width: 850px;
+    background: #fff;
+    border: 1px solid #b0bcd0;
+    border-radius: 4px;
+    margin: 0 auto;
+    box-shadow: 0 0 8px rgba(0,0,0,0.15);
+  }
+
+  td {
+    vertical-align: top;
+    padding: 6px;
+  }
+
+  /* Хаp толгой хэсэг */
+  .header {
+    background: #3b5998;
+    color: #fff;
+    padding: 10px 16px;
+  }
+
+  .header h1 {
+    margin: 0;
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+  }
+
+  .header small {
+    font-size: 13px;
+  }
+
+  /* Зүүн навигац */
+  .nav {
+    background: #e9ebf3;
+    width: 180px;
+    font-size: 13px;
+    border-right: 1px solid #c9cfe0;
+  }
+
+  .nav form {
+    margin-bottom: 10px;
+  }
+
+  .nav input[type="text"] {
+    width: 115px;
+    font-size: 12px;
+    padding: 3px;
+    border: 1px solid #ccc;
+  }
+
+  .nav button {
+    font-size: 12px;
+    padding: 3px 6px;
+  }
+
+  .nav a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    padding: 2px 0;
+  }
+
+  .nav a:hover {
+    text-decoration: underline;
+  }
+
+  /* Гол хэсэг */
+  .main {
+    background: #fff;
+  }
+
+  .section-title {
+    background: #e9ebf3;
+    font-weight: bold;
+    padding: 4px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .footer {
+    text-align: center;
+    background: #e9ebf3;
+    font-size: 12px;
+    padding: 6px;
+    color: #333;
+    border-top: 1px solid #c9cfe0;
+  }
+
+  .info-table td {
+    padding: 3px 6px;
+    font-size: 13px;
+  }
+
+  img.profile {
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    border-radius: 2px;
+  }
+
+  a {
+    color: #3b5998;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+</style>
+</head>
+<body>
+  <table class="container" cellspacing="0" cellpadding="0">
+    <!-- Header -->
+    <tr>
+      <td colspan="2" class="header">
+        <h1>[ thefacebook1 ]</h1>
+        <small>home | search | global | social net | invite | faq | logout</small>
+      </td>
+    </tr>
+
+    <!-- Content -->
+    <tr>
+      <!-- Navigation -->
+      <td class="nav">
+        <form>
+          <input type="text" placeholder="quick search">
+          <button type="submit">go</button>
+        </form>
+        <strong>Балдан’s Profile</strong><br><br>
+        <a href="#">My Profile</a>
+        <a href="#">My Friends</a>
+        <a href="#">My Groups</a>
+        <a href="#">My Messages</a>
+        <a href="#">My Account</a>
+        <a href="#">My Privacy</a>
+      </td>
+
+      <!-- Main -->
+      <td class="main">
+        <table width="100%" cellspacing="0" cellpadding="0">
+          <tr>
+            <!-- Picture -->
+            <td width="45%" style="border-right:1px solid #ccc; text-align:center;">
+              <div class="section-title">Picture</div>
+              <img src="baldan.jpg" alt="Балдан" width="200" class="profile">
+              <div style="font-size:13px; margin-top:8px;">
+                <a href="#">View My Friends</a><br>
+                <a href="#">Edit My Profile</a><br>
+                <a href="#">Account Settings</a>
+              </div>
+            </td>
+
+            <!-- Info -->
+            <td style="padding-left:10px;">
+              <div class="section-title">Information</div>
+              <table class="info-table">
+                <tr><td><b>Name:</b></td><td>Балдан</td></tr>
+                <tr><td><b>Member Since:</b></td><td>January 12, 2005</td></tr>
+                <tr><td><b>Concentration:</b></td><td>Computer Science</td></tr>
+                <tr><td><b>School:</b></td><td>NUM</td></tr>
+                <tr><td><b>Email:</b></td><td>baldan@num.edu.mn</td></tr>
+                <tr><td><b>Phone:</b></td><td>+976-99112233</td></tr>
+                <tr><td><b>Looking for:</b></td><td>Friendship, Networking</td></tr>
+                <tr><td><b>Interests:</b></td><td>Music, Travel, Coding</td></tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <!-- Footer -->
+    <tr>
+      <td colspan="2" class="footer">
+        © 2005 thefacebook1 — Балдан
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
