@@ -1,0 +1,95 @@
+body {
+            background-image: url("hee.jpg");
+            background-repeat: repeat;
+            background-size: 500px;
+            font-family: Arial;
+            background-color : white;
+            color: #222;
+        }
+
+        /* CV-g tuvd bairluulah */
+        .cv-hairtsag {
+            width: 900px;
+            background: #fff;
+            margin: 40px auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        
+        .garchig {
+            background: linear-gradient(90deg, #004aad, #b50000);
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+        }
+        .garchig h1 {
+            margin: 0;
+            font-size: 28px;
+            letter-spacing: 1px;
+        }
+        .garchig p {
+            margin: 5px 0 0;
+            font-size: 16px;
+        }
+
+        .aguulga {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 20px;
+            padding: 25px;
+        }
+
+        .left {
+            background: #f8f9ff;
+            border-right: 2px solid #eee;
+            padding: 20px;
+        }
+
+        .section-title {
+            color: #004aad;
+            border-bottom: 2px solid #b50000;
+            font-weight: bold;
+            margin-bottom: 10px;
+            padding-bottom: 4px;
+        }
+
+        .skill {
+            margin-bottom: 10px;
+        }
+        .bar {
+            height: 8px;
+            background: #ddd;
+            border-radius: 4px;
+            
+        }
+        .fill {
+            height: 8px;
+            background: #004aad;
+        }
+
+        /* Baruun bagana */
+        .right {
+            padding: 20px;
+        }
+
+        .item {
+            margin-bottom: 15px;
+        }
+
+        .item-title {
+            font-weight: bold;
+            color: #004aad;
+        }
+
+        .item-sub {
+            color: #b50000;
+            font-size: 14px;
+        }
+
+        .item-date {
+            color: gray;
+            font-size: 13px;
+            margin-bottom: 5px;
+        }
