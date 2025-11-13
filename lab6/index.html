@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix Clone Advanced</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo">NETFLIX</div>
+    <nav class="nav">
+      <a href="#">Home</a>
+      <a href="#">TV Shows</a>
+      <a href="#">Movies</a>
+      <a href="#">New & Popular</a>
+      <a href="#">My List</a>
+    </nav>
+    <button class="signin-btn">Sign In</button>
+  </header>
+
+  <!-- HERO with background video -->
+  <section class="hero">
+    <video autoplay muted loop class="hero-video">
+      <source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4">
+    </video>
+    <div class="overlay"></div>
+    <div class="hero-text">
+      <h1>Unlimited movies, TV shows, and more</h1>
+      <p>Watch anywhere. Cancel anytime.</p>
+      <input type="email" placeholder="Email address">
+      <button class="cta-btn">Get Started ></button>
+    </div>
+  </section>
+
+  <!-- MOVIE ROW with carousel -->
+  <section class="movie-section">
+  <h2>Popular on Netflix</h2>
+  <div class="carousel-container">
+    <button class="prev">&lt;</button>
+    <div class="movie-row">
+      <div class="movie-card">
+        <img src="endgame.jpg" alt="Avengers Endgame">
+        <span class="play-icon">&#9658;</span>
+      </div>
+      <div class="movie-card">
+        <img src="1917.jpg" alt="1917">
+        <span class="play-icon">&#9658;</span>
+      </div>
+      <div class="movie-card">
+        <img src="dune.jpg" alt="Dune">
+        <span class="play-icon">&#9658;</span>
+      </div>
+      <div class="movie-card">
+        <img src="spiderman.jpg" alt="Spider-Man">
+        <span class="play-icon">&#9658;</span>
+      </div>
+      <div class="movie-card">
+        <img src="matrix.jpg" alt="Matrix Resurrections">
+        <span class="play-icon">&#9658;</span>
+      </div>
+      <div class="movie-card">
+        <img src="oldboy.jpg" alt="Oldboy">
+        <span class="play-icon">&#9658;</span>
+      </div>
+    </div>
+    <button class="next">&gt;</button>
+  </div>
+</section>
+
+
+  <!-- FEATURES -->
+  <section class="feature">
+    <div class="text">
+      <h2>Enjoy on your TV.</h2>
+      <p>Watch on Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+    </div>
+    <div class="image">
+      <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji-tv.png" alt="">
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">What is Netflix?</div>
+    <div class="faq-item">How much does Netflix cost?</div>
+    <div class="faq-item">Where can I watch?</div>
+    <div class="faq-item">How do I cancel?</div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="links">
+      <a href="#">FAQ</a>
+      <a href="#">Help Center</a>
+      <a href="#">Account</a>
+      <a href="#">Media Center</a>
+      <a href="#">Investor Relations</a>
+      <a href="#">Jobs</a>
+      <a href="#">Ways to Watch</a>
+      <a href="#">Terms of Use</a>
+    </div>
+    <p>Netflix Mongolia Clone © 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
