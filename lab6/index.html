@@ -3,109 +3,238 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Netflix Clone Advanced</title>
+  <title>Netflix Mongolia</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <!-- HEADER -->
-  <header class="header">
-    <div class="logo">NETFLIX</div>
-    <nav class="nav">
-      <a href="#">Home</a>
-      <a href="#">TV Shows</a>
-      <a href="#">Movies</a>
-      <a href="#">New & Popular</a>
-      <a href="#">My List</a>
-    </nav>
-    <button class="signin-btn">Sign In</button>
-  </header>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">NETFLIX</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Нүүр</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">ТВ шоу</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Кино</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Шинэ нэмэлтүүд</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Миний жагсаалт</a>
+          </li>
+        </ul>
+        <div class="d-flex">
+          <button class="btn btn-danger">Нэвтрэх</button>
+        </div>
+      </div>
+    </div>
+  </nav>
 
-  <!-- HERO with background video -->
-  <section class="hero">
+  <!-- HERO SECTION -->
+  <section class="hero-section">
     <video autoplay muted loop class="hero-video">
       <source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4">
     </video>
-    <div class="overlay"></div>
-    <div class="hero-text">
-      <h1>Unlimited movies, TV shows, and more</h1>
-      <p>Watch anywhere. Cancel anytime.</p>
-      <input type="email" placeholder="Email address">
-      <button class="cta-btn">Get Started ></button>
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div class="hero-content">
+        <h1>Хязгааргүй кино, ТВ шоу </h1>
+        <p>Хэзээ ч, хаана ч үзэх боломжтой. Дурын үед цуцлах боломжтой.</p>
+        <div class="email-form">
+          <div class="row g-0">
+            <div class="col-md-8">
+              <input type="email" class="form-control rounded-0" placeholder="Имэйл хаяг">
+            </div>
+            <div class="col-md-4">
+              <button class="btn btn-danger w-100 rounded-0 btn-lg">Эхлэх <i class="bi bi-chevron-right"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- MOVIE ROW with carousel -->
-  <section class="movie-section">
-  <h2>Popular on Netflix</h2>
-  <div class="carousel-container">
-    <button class="prev">&lt;</button>
-    <div class="movie-row">
-      <div class="movie-card">
-        <img src="endgame.jpg" alt="Avengers Endgame">
-        <span class="play-icon">&#9658;</span>
-      </div>
-      <div class="movie-card">
-        <img src="1917.jpg" alt="1917">
-        <span class="play-icon">&#9658;</span>
-      </div>
-      <div class="movie-card">
-        <img src="dune.jpg" alt="Dune">
-        <span class="play-icon">&#9658;</span>
-      </div>
-      <div class="movie-card">
-        <img src="spiderman.jpg" alt="Spider-Man">
-        <span class="play-icon">&#9658;</span>
-      </div>
-      <div class="movie-card">
-        <img src="matrix.jpg" alt="Matrix Resurrections">
-        <span class="play-icon">&#9658;</span>
-      </div>
-      <div class="movie-card">
-        <img src="oldboy.jpg" alt="Oldboy">
-        <span class="play-icon">&#9658;</span>
+  <!-- MOVIE CAROUSEL -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="mb-4">Netflix-д алдартай</h2>
+      <div class="row g-3">
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="movie-card">
+            <img src="endgame.jpg" alt="Avengers Endgame">
+            <div class="play-icon"><i class="bi bi-play-circle"></i></div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="movie-card">
+            <img src="1917.jpg" alt="1917">
+            <div class="play-icon"><i class="bi bi-play-circle"></i></div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="movie-card">
+            <img src="dune.jpg" alt="Dune">
+            <div class="play-icon"><i class="bi bi-play-circle"></i></div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="movie-card">
+            <img src="spiderman.jpg" alt="Spider-Man">
+            <div class="play-icon"><i class="bi bi-play-circle"></i></div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="movie-card">
+            <img src="matrix.jpg" alt="Matrix Resurrections">
+            <div class="play-icon"><i class="bi bi-play-circle"></i></div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="movie-card">
+            <img src="oldboy.jpg" alt="Oldboy">
+            <div class="play-icon"><i class="bi bi-play-circle"></i></div>
+          </div>
+        </div>
       </div>
     </div>
-    <button class="next">&gt;</button>
-  </div>
-</section>
+  </section>
 
-
-  <!-- FEATURES -->
-  <section class="feature">
-    <div class="text">
-      <h2>Enjoy on your TV.</h2>
-      <p>Watch on Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
-    </div>
-    <div class="image">
-      <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji-tv.png" alt="">
+  <!-- MORE REASONS TO JOIN -->
+  <section class="py-5 bg-black">
+    <div class="container">
+      <h2 class="text-center mb-5">Бүртгүүлэх нэмэлт шалтгаанууд</h2>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="reason-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/3114/3114883.png" alt="TV">
+            <h4>ТВ-р үзэх</h4>
+            <p>Smart TV, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray тоглуулагч болон бусад төхөөрөмжүүдээр үзэх.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="reason-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/1828/1828911.png" alt="Download">
+            <h4>Оффлайн үзэх</h4>
+            <p>Дуртай шоу, киногоо хялбар татаж авч, үзэх.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="reason-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/1828/1828859.png" alt="Watch Everywhere">
+            <h4>Хаана ч үзэх</h4>
+            <p>Утас, таблет, компьютер, ТВ зэрэг төхөөрөмжүүдээр хязгааргүй үзэх.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="reason-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/4201/4201535.png" alt="Kids">
+            <h4>Хүүхдийн профайл</h4>
+            <p>Хүүхдүүдэд зориулсан профайл үүсгэж, аюулгүй орчинд үзүүлэх.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- FAQ -->
-  <section class="faq">
-    <h2>Frequently Asked Questions</h2>
-    <div class="faq-item">What is Netflix?</div>
-    <div class="faq-item">How much does Netflix cost?</div>
-    <div class="faq-item">Where can I watch?</div>
-    <div class="faq-item">How do I cancel?</div>
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Түгээмэл асуултууд</h2>
+      <div class="accordion" id="faqAccordion">
+        <div class="accordion-item mb-2 border-0">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+              Netflix гэж юу вэ?
+            </button>
+          </h2>
+          <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Netflix нь мянга мянган ТВ шоу, кинонуудыг олон төрлийн төхөөрөмж дээр үзэх боломжийг олгодогийн стриминг үйлчилгээ юм.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item mb-2 border-0">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+              Netflix-ийн үнэ хэд вэ?
+            </button>
+          </h2>
+          <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Та өөрийн утас, таблет, компьютер, ТВ зэрэг төхөөрөмжүүд дээр сар бүрийн тогтмол төлбөр төлж Netflix үзэх боломжтой.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item mb-2 border-0">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+              Хаана үзэх боломжтой вэ?
+            </button>
+          </h2>
+          <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Та хаана ч, хэзээ ч үзэх боломжтой. Нэвтрэх мэдээллээ ашиглан netflix.com вэбсайтаар эсвэл утас, таблет, ТВ зэрэг төхөөрөмжүүд дээрх Netflix аппаар нэвтрэн үзэх боломжтой.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item mb-2 border-0">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+              Хэрхэн цуцлах вэ?
+            </button>
+          </h2>
+          <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Netflix нь үйлчилгээгээ хялбар, таньд төлбөр төлөхгүй байх үед цуцлагддаг. Цуцлах товчийг дарснаар таны бүртгэл тэр даруй цуцлагдана.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- FOOTER -->
-  <footer class="footer">
-    <div class="links">
-      <a href="#">FAQ</a>
-      <a href="#">Help Center</a>
-      <a href="#">Account</a>
-      <a href="#">Media Center</a>
-      <a href="#">Investor Relations</a>
-      <a href="#">Jobs</a>
-      <a href="#">Ways to Watch</a>
-      <a href="#">Terms of Use</a>
+  <footer class="py-5 bg-black">
+    <div class="container">
+      <p class="mb-4">Асуулт байвал 800-123-456 дугаар луу залгана уу</p>
+      <div class="row">
+        <div class="col-6 col-md-3">
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#">Түгээмэл асуултууд</a></li>
+            <li class="mb-2"><a href="#">Хэрэглэгчийн харилцах төв</a></li>
+            <li class="mb-2"><a href="#">Бүртгэл</a></li>
+            <li class="mb-2"><a href="#">Медиа төв</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3">
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#">Хөрөнгө оруулагчид</a></li>
+            <li class="mb-2"><a href="#">Ажлын байр</a></li>
+            <li class="mb-2"><a href="#">Үзэх арга замууд</a></li>
+            <li class="mb-2"><a href="#">Үйлчилгээний нөхцөл</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="mt-4">Netflix Mongolia © 2025</p>
     </div>
-    <p>Netflix Mongolia Clone © 2025</p>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
