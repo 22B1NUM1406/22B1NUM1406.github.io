@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hangman Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="welcome-screen" class="screen">
+  <h1 class="title">HANGMAN</h1>
+  <p>Үг таах тоглоомд тавтай морил! <br>Үсгүүдээр дамжуулан нууц үгийг таа.</p>
+  <button id="start-btn" class="btn">Эхлэх</button>
+</div>
+
+<div id="game-screen" class="screen" style="display:none;">
+  <h1 class="title">HANGMAN</h1>
+  
+  <div class="game-info">
+    <div class="info-box">Зөв таамаглал: <span id="correct-count">0</span></div>
+    <div class="info-box">Буруу таамаглал: <span id="wrong-count">0</span>/6</div>
+  </div>
+
+  <div class="game-wrapper">
+
+    <div class="left-panel">
+      <div id="death-text"></div>
+      <h2 id="question"></h2>
+      <div id="word-container"></div>
+      <div id="letters-container"></div>
+      <button id="restart-btn" class="btn" style="display:none;">Дахин тоглох</button>
+    </div>
+
+    <div class="right-panel">
+      <img id="hangman-image" src="hooson.png" alt="Hangman">
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
